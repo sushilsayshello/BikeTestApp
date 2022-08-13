@@ -2,7 +2,6 @@ package com.example.bike_test;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.database.Cursor;
 import android.os.Bundle;
 import android.text.TextUtils;
