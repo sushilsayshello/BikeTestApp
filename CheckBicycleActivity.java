@@ -35,20 +35,7 @@ public class CheckBicycleActivity extends AppCompatActivity {
                 Cursor cursor = shop.getAllData();
                 TVpriceCheck.setText("Not found.");
 
-                if (cursor.getCount() == 0) {
-                    TVpriceCheck.setText("Database empty !");
-                    return;
-                }
-                StringBuffer buffer = new StringBuffer();
-                if (ETbrandCheck.getText().toString().isEmpty() || ETmodelCheck.getText().toString().isEmpty() || ETcategoryCheck.getText().toString().isEmpty()) {
-                    Toast.makeText(CheckBicycleActivity.this, "Please enter all fields.", Toast.LENGTH_SHORT).show();
-                }
-                while (cursor.moveToNext()) {
-                    if (ETbrandCheck.getText().toString().equals(cursor.getString(0)) && ETmodelCheck.getText().toString().equals(cursor.getString(1)) && ETcategoryCheck.getText().toString().equals(cursor.getString(2))) {
-
-                        buffer.append("" + cursor.getString(3) + "\n");
-                        TVpriceCheck.setText( buffer.toString());
-                    }
+  \
 
                 }
             }
