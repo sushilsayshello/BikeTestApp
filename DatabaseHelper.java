@@ -30,3 +30,15 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         onCreate(sqLiteDatabase);
     }
   
+    public boolean insertData(String brand, String model, String category, String price){
+
+       
+
+        long success= db.insert(TABLE_NAME,null,contentValues);
+        if(success == -1){
+            return false;
+        }
+        else{
+            return true;
+        }
+    }
