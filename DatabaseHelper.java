@@ -35,6 +35,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
        SQLiteDatabase db=this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
         contentValues.put(COL_1,brand);
+        contentValues.put(COL_2,model);
         
 
         long success= db.insert(TABLE_NAME,null,contentValues);
