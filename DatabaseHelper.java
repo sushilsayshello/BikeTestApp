@@ -32,6 +32,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
   
     public boolean insertData(String brand, String model, String category, String price){
 
+       SQLiteDatabase db=this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
        
 
         long success= db.insert(TABLE_NAME,null,contentValues);
