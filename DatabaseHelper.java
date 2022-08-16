@@ -36,6 +36,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         ContentValues contentValues = new ContentValues();
         contentValues.put(COL_1,brand);
         contentValues.put(COL_2,model);
+        contentValues.put(COL_3,category);
+        
         
 
         long success= db.insert(TABLE_NAME,null,contentValues);
