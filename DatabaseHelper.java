@@ -48,3 +48,9 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             return true;
         }
     }
+  
+      public Cursor getAllData(){
+       
+    }
+
+}
